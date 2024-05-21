@@ -4,6 +4,7 @@ export const metadata = {
 }
 
 import Link from 'next/link'
+import axios from '../axiosConfig';
 
 export default function SignUp() {
   return (
