@@ -4,7 +4,8 @@ export const metadata = {
 }
 
 import Link from 'next/link'
-import axios from '../axiosConfig';
+import axios from 'axios'
+import { useRouter } from 'next/router';
 
 export default function SignIn() {
   return (
