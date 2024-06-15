@@ -10,6 +10,6 @@ Route::post('SignUp', [AuthController::class, 'SignUp']);
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('user', [UserController::class, 'getUser']);
     Route::get('role-data', [UserController::class, 'getRoleSpecificData']);
-    
+
 
 });
