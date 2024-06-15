@@ -1,25 +1,26 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useState, useContext, useEffect } from 'react';
+import { getUser } from '../services/api';
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
 
-    const signin = async (email, password) => {
-        // Call your login API
-    };
+    useEffect(() => {
+        const fetchUser = async () => {
+            try {
+                const data = await getUser();
+                setUser(data);
+            } catch (error) {
+                setUser(null);
+            }
+        };
 
-    const signup = async (name, email, password, password_confirmation) => {
-        // Call your register API
-    };
-
-    const logout = () => {
-        setUser(null);
-        // Perform logout logic
-    };
+        fetchUser();
+    }, []);
 
     return (
-        <AuthContext.Provider value={{ user, signin, signup, logout }}>
+        <AuthContext.Provider value={{ user, setUser }}>
             {children}
         </AuthContext.Provider>
     );

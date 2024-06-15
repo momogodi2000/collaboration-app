@@ -1,14 +1,9 @@
-import { RouteGuard } from '../../components/RouteGuard';
+import useProtectedRoute from '../hooks/useProtectedRoute';
 
-const AdminDashboard = () => {
-    return (
-        <RouteGuard allowedRoles={['admin']}>
-            <div>
-                <h1>Admin Dashboard</h1>
-                {/* Admin-specific content */}
-            </div>
-        </RouteGuard>
-    );
+const AdministratorPage = () => {
+    useProtectedRoute('administrator');
+
+    return <div>Welcome, administrator!</div>;
 };
 
-export default AdminDashboard;
+export default AdministratorPage;
