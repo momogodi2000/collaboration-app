@@ -1,0 +1,241 @@
+/* Add global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+.developer-page {
+    padding: 20px;
+}
+
+.features {
+    margin-top: 20px;
+}
+
+.features h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.github-repos, .github-issues, .real-time-editing, .chat {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.monaco-editor {
+    margin-top: 10px;
+}
+
+
+/* Add global styles developer */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+.developer-page {
+    padding: 20px;
+}
+
+.features {
+    margin-top: 20px;
+}
+
+.features h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.github-repos, .github-issues, .real-time-editing, .chat {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.messages {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.monaco-editor {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 70px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.chat button {
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat button:hover {
+    background-color: #005bb5;
+}
+
+
+
+/* Add global styles designer*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+.designer-page {
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.features {
+    margin-top: 20px;
+}
+
+.features h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.task-list, .chat, .video-call {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.messages {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-height: 150px;
+    overflow-y: scroll;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+input[type="text"] {
+    width: calc(100% - 70px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.chat button {
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat button:hover {
+    background-color: #005bb5;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

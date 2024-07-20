@@ -1,0 +1,93 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.heading {
+    color: #333;
+}
+
+.logoutButton {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.logoutButton:hover {
+    background-color: #d32f2f;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.user {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.configForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.configForm label {
+    margin-bottom: 5px;
+}
+
+.configForm input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.configForm button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.configForm button:hover {
+    background-color: #388e3c;
+}
+
+.deleteButton {
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.deleteButton:hover {
+    background-color: #d32f2f;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}

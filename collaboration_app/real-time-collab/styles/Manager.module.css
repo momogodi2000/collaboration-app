@@ -1,0 +1,87 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #333;
+}
+
+.logoutButton {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logoutButton:hover {
+    background-color: #d32f2f;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.project {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.taskForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.taskForm input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.taskForm button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.taskForm button:hover {
+    background-color: #388e3c;
+}
+
+.tasks {
+    margin-top: 20px;
+}
+
+.task {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+}
+
+.analytics {
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
